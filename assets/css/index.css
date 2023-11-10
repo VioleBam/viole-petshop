@@ -1,0 +1,689 @@
+/* ------------------------------------------------------------------ 
+[Master Stylesheet]
+
+Project:    Pet Shop
+Version:    1.0
+Last change:    05/19/2023
+Assigned to:    ArielVW
+Primary use:    Landing Page / HTML Template
+------------------------------------------------------------------- */
+@import "./reset.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 2vw;
+    font-family: 'Kelly Slab', cursive;
+}
+#Home {
+    height: 13vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+}
+#Home > #brand, #Home > #navbar {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 2vw;
+}
+
+/* BRAND AREA */
+#Home > #brand {
+    text-decoration: none;
+}
+#Home > #brand > #box-img {
+    height: 8vw;
+    width: 8vw;
+    border-radius: 8vw;
+    background-color: #0099ff;
+}
+#Home > #brand > #box-img > img{
+    height: 100%;
+    width: 100%;
+}
+#Home > #brand > #box-text {
+    margin-left: 1vw;
+}
+#Home > #brand > #box-text > h1 {
+    color: #293241;
+    font-size: 4vw;
+    font-family: 'Sigmar', cursive;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Home > #brand > #box-text > h1 > span{
+    color: #ee6c4d;
+}
+/* END OF BRAND */
+
+/* NAVBAR AREA */
+#Home > #navbar {
+    justify-content: end;
+}
+/* END OF NAVBAR */
+
+/* BANNER AREA */
+#Banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+        45deg,
+        #12c2e9,
+        #c471ed,
+        #f64f59
+    );
+}
+#Banner > #banner-image, #Banner > #banner-text {
+    width: 50%;
+    margin: 3vw 0;
+}
+#Banner > #banner-image {
+    width: 30vw;
+    aspect-ratio: 1 / 1;
+}
+#Banner > #banner-image > img {
+    width: 100%;
+    object-fit: fill;
+}
+#Banner > #banner-text {
+    color: white;
+}
+#Banner > #banner-text > h2 {
+    color: #fcfcfc;
+    font-size: 4vw;
+    font-family: 'Sigmar', cursive;
+}
+#Banner > #banner-text > h2 > #bt-01 {
+    color: #f0a503;
+    font-size: 6vw;
+    font-family: 'Sigmar', cursive;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Banner > #banner-text > h2 > #bt-01:hover {
+    font-size: 7vw;
+}
+#Banner > #banner-text > h2 > #bt-02 {
+    color: #f0a503;
+    font-size: 6vw;
+    font-family: 'Sigmar', cursive;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Banner > #banner-text > p {
+    color: rgb(229, 235, 236);
+    font-size: 2vw;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+#Banner > #banner-text > p:hover {
+    font-size: 2.5vw;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+/* END OF BANNER */
+
+#Greetings {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#Greetings > .greeting {
+    width: 80%;
+    height: 100%;
+    object-fit: fill;
+}
+#Greetings > #greet-02 {
+    display: none;
+}
+
+/* SERVICES AREA */
+#Services {
+    width: 100%;
+    position: relative;
+}
+#Services > h1 {
+    color: #f0a503;
+    font-size: 10vw;
+    text-align: center;
+    font-family: 'Sigmar', cursive;
+}
+#Services > h1 > span {
+    color: #155ea3;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Services > .row {
+    margin: 5vw 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+        45deg,
+        #12c2e9,
+        #c471ed,
+        #f64f59
+    );
+}
+#Services > .row > .box-services {
+    width: 80%;
+    height: 80%;
+    opacity: 0.6;
+}
+#Services > .row > .box-services:hover {
+    opacity: 1;
+}
+#Services > .row > .box-services > img {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+#Services > .row > .box-services > .img-services {
+    margin-top: 5vw;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#Services > .row > .box-services > #img-services-03 {
+    margin-bottom: 5vw;
+}
+#Services > .row > .box-services > #title-services-01 {
+    position: absolute;
+    top: 25vw;
+    right: 15vw;
+    color: #155ea3;
+    font-size: 8vw;
+    font-family: 'Sigmar', cursive;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Services > .row > .box-services > #teks-services-01 {
+    position: absolute;
+    top: 35vw;
+    right: 12vw;
+    color: #000000;
+    font-size: 3vw;
+    width: 60%;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Services > .row > .box-services > #title-services-02 {
+    position: absolute;
+    top: 77vw;
+    left: 20vw;
+    color: #ee6c4d;
+    font-size: 8vw;
+    font-family: 'Sigmar', cursive;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Services > .row > .box-services > #teks-services-02 {
+    position: absolute;
+    top: 88vw;
+    left: 15vw;
+    color: #8d0770;
+    font-size: 3vw;
+    width: 50%;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Services > .row > .box-services > #title-services-03 {
+    position: absolute;
+    top: 125vw;
+    right: 20vw;
+    color: #6b0d63;
+    font-size: 8vw;
+    font-family: 'Sigmar', cursive;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Services > .row > .box-services > #teks-services-03 {
+    position: absolute;
+    top: 135vw;
+    right: 10vw;
+    color: #ee0410;
+    font-size: 3vw;
+    width: 50%;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+/* END OF SERVICES */
+
+/* PRODUCTS AREA */
+#Products {
+    margin: 5vw 0;
+}
+#Products > h1 {
+    margin-bottom: 3vw;
+    color: #f0a503;
+    font-size: 10vw;
+    text-align: center;
+    font-family: 'Sigmar', cursive;
+}
+#Products > h1 > span {
+    color: #155ea3;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Products > .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#Products > .row > .card {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#Products > .row > .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+#Products > .row > .card > .img-card {
+    width: 100%;
+}
+#Products > .row > .card > .img-card > img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: fill;
+}
+#Products > .row > .card > .teks-card {
+    margin: 10px;
+}
+#Products > .row > .card > .teks-card > .title-card {
+    margin: 15px 10px 10px;
+    color: #000033;
+    font-size: 4vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Sigmar', cursive;
+}
+#Products > .row > .card > .teks-card > .desc-card {
+    margin: 5px 10px 15px;
+    color: #000033;
+    font-size: 2vw;
+    font-family: 'Gloria Hallelujah', cursive;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+#Products > .row > .card > .teks-card > .price-card {
+    float: right;
+    margin: 5px 10px 15px;
+    color: #9c0388;
+    font-size: 4vw;
+    font-family: 'Sigmar', cursive;
+}
+/* END OF PRODUCTS */
+
+#Employees {
+    width: 100%;
+    margin: 5vw 0;
+    position: relative;
+}
+#Employees > h1 {
+    color: #f0a503;
+    font-size: 10vw;
+    text-align: center;
+    font-family: 'Sigmar', cursive;
+}
+#Employees > h1 > span {
+    color: #155ea3;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Employees > .bg-employees {
+    margin-top: 15vw;
+    width: 100%;
+    height: 30vw;
+    opacity: 0.9;
+    background-image: linear-gradient(
+        45deg,
+        #12c2e9,
+        #c471ed,
+        #f64f59
+    );
+}
+#Employees > .bg-employees > img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+}
+#Employees > .bg-employees > .employees {
+    width: 80%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    top: 13vw;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+#Employees > .bg-employees > .employees > img {
+    width: 94%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+#Employees > .bg-employees > .employees > img:hover {
+    opacity: 1;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+#Employees > .bg-employees > p {
+    width: 90%;
+    color: #e3e3e7;
+    font-size: 2vw;
+    font-family: 'Gloria Hallelujah', cursive;
+    position: absolute;
+    bottom: 5vw;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+#Employees > .bg-employees > p:hover {
+    color: #000033;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+
+/* CONTACT AREA */
+#Contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#Contact > #maps, #Contact > #box-contact {
+    width: 90%;
+    height: 40vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#Contact > #maps {
+    margin-top: 20px;
+}
+#Contact > #maps > iframe {
+    width: 100%;
+    height: 100%;
+}
+#Contact > #box-contact {
+    height: 40vw;
+}
+#Contact > #box-contact > img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+#Contact > #box-contact > .contact-teks {
+    width: 80%;
+    position: absolute;
+    top: 2vw;
+    left: 8vw;
+}
+#Contact > #box-contact > .contact-teks > .row {
+    color: #e46905;
+    margin: 5px;
+    font-size: 3vw;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+#Contact > #box-contact > .contact-teks > h1 {
+    color: #f19305;
+    margin: 1vw;
+    font-size: 10vw;
+    font-family: 'Sigmar', cursive;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+#Contact > #box-contact > .contact-teks > h1 > span {
+    color: #000033;
+}
+#Contact > #box-contact > .contact-teks > p {
+    color: #8d0770;
+    margin: 2vw;
+    font-size: 3vw;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+#Contact > #box-contact > .contact-teks > .row > i {
+    color: #0578e4;
+}
+/* END OF CONTACT */
+
+/* FOOTER AREA */
+footer {
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    background-image: linear-gradient(
+        45deg,
+        #12c2e9,
+        #c471ed,
+        #f64f59
+    );
+}
+footer > #box-social-media, footer > #top, footer > #copyright {
+    flex: 33.33%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+}
+footer > #box-social-media > a {
+    color: white;
+    margin: 0 1vw 0;
+    text-decoration: none;
+}
+footer > #top > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+footer > #copyright > p {
+    color: white;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+/* END OF FOOTER */
+@media only screen and (max-width: 600px) {
+    #Home > #navbar > .fa-bars {
+        color: #000033;
+        font-size: 5vw;
+        cursor: pointer;
+    }
+    #Home > #navbar > #box-navbar {
+        position: fixed;
+        top: 0;
+        right: -100px;
+        height: 100vh;
+        width: 100px;
+        background-color: #088395;
+        transition: linear 0.5s;
+        z-index: 2;
+    }
+    #Home > #navbar > #box-navbar > a, #Home > #navbar > #box-navbar > i {
+        display: block;
+        color: #ecf9ff;
+        margin: 15px 15px;
+        text-decoration: none;
+    }
+    #Home > #navbar > #box-navbar > a {
+        font-size: 2.5vw;
+    }
+    #Home > #navbar > #box-navbar > i {
+        font-size: 5vw;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 601px) {
+    #Home {
+        height: 7vw;
+    }
+    #Home > #brand > #box-img {
+        height: 4vw;
+        width: 4vw;
+        border-radius: 4vw;
+        background-color: #0099ff;
+    }
+    #Home > #brand > #box-text > h1 {
+        font-size: 3vw;
+    }
+    #Home > #navbar > .fa-solid, #Home > #navbar > #box-navbar > .fa-solid {
+        display: none;
+    }
+    #Home > #navbar > #box-navbar {
+        display: inline-block;
+    }
+    #Home > #navbar > #box-navbar > a {
+        position: relative;
+        font-size: 1.5vw;
+        margin: 0 0.5vw;
+        text-decoration: none;
+        color: #ee6c4d;
+        font-family: 'Sigmar', cursive;
+        text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+    }
+    #Home > #navbar > #box-navbar > a::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        background: #ee6c4d;
+        position: absolute;
+        transition: 0.5s;
+        left: 0;
+        bottom: -1px;
+    }
+    #Home > #navbar > #box-navbar > a:hover::after {
+        width: 100%;
+    }
+    #Greetings {
+        margin: 5vw 0;
+    }
+    #Greetings > #greet-01 {
+        display: none;
+    }
+    #Greetings > #greet-02 {
+        display: block;
+    }
+    #Services > h1 {
+        font-size: 5vw;
+    }
+    #Services > .row {
+        margin: 3vw 0;
+        column-gap: 2vw;
+    }
+    #Services > .row > .box-services {
+        flex: 0 0 30%;
+    }
+    #Services > .row > .box-services > .img-services {
+        margin: 5vw 0;
+    }
+    #Services > .row > .box-services > #title-services-01 {
+        position: absolute;
+        top: 16vw;
+        left: 15vw;
+        font-size: 3vw;
+    }
+    #Services > .row > .box-services > #teks-services-01 {
+        top: 20vw;
+        left: 12vw;
+        font-size: 1vw;
+        width: 20%;
+    }
+    #Services > .row > .box-services > #title-services-02 {
+        position: absolute;
+        top: 18vw;
+        left: 36vw;
+        font-size: 3vw;
+    }
+    #Services > .row > .box-services > #teks-services-02 {
+        top: 22vw;
+        left: 36vw;
+        font-size: 1vw;
+        width: 20%;
+    }
+    #Services > .row > .box-services > #title-services-03 {
+        position: absolute;
+        top: 18vw;
+        right: 12vw;
+        font-size: 3vw;
+    }
+    #Services > .row > .box-services > #teks-services-03 {
+        top: 22vw;
+        right: 3vw;
+        font-size: 1vw;
+        width: 20%;
+    }
+    #Products > h1 {
+        font-size: 5vw;
+    }
+    #Products > .row {
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    #Products > .row > .card {
+        width: 30%;
+        height: auto;
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #Products > .row > .card > .teks-card > .title-card {
+        font-size: 1.5vw;
+    }
+    #Products > .row > .card > .teks-card > .desc-card {
+        font-size: 1vw;
+    }
+    #Products > .row > .card > .teks-card > .price-card {
+        font-size: 1.5vw;
+    }
+    #Employees > h1 {
+        font-size: 5vw;
+    }
+    #Employees > .bg-employees {
+        height: 32vw;
+    }
+    #Employees > .bg-employees > .employees {
+        top: 7vw;
+    }
+    #Employees > .bg-employees > p {
+        bottom: 6vw;
+    }
+    #Contact {
+        margin-bottom: 5vw;
+        column-gap: 30px;
+    }
+    #Contact > #maps, #Contact > #box-contact {
+        height: 30vw;
+    }
+    #Contact > #box-contact {
+        width: 60%;
+    }
+    #Contact > #maps {
+        width: 30%;
+    }
+    #Contact > #maps {
+        margin-top: 0;
+    }
+    #Contact > #box-contact > .contact-teks {
+        width: 60%;
+        top: 1vw;
+        left: 4vw;
+    }
+    #Contact > #box-contact > .contact-teks > .row {
+        margin-left: 5vw;
+        font-size: 2vw;
+    }
+
+    #Contact > #box-contact > .contact-teks > h1 {
+        font-size: 5vw;
+    }
+    #Contact > #box-contact > .contact-teks > p {
+        font-size: 2vw;
+    }
+    footer {
+        height: 15vh;
+    }
+    footer > #box-social-media, footer > #top, footer > #copyright {
+        font-size: 3vw;
+    }
+}

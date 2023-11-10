@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<!-- ------------------------------------------------------------------ 
+[Master HTML]
+
+Project:    Pet Shop
+Version:    1.0
+Last change:    05/19/2023
+Assigned to:    ArielVW
+Primary use:    Landing Page / HTML Template
+------------------------------------------------------------------- -->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-ComApatible" content="IE=edge">
+        <title>Ceria Pet Shop</title>
+        <meta name="description" content="Website Pet Shop">
+        <meta name="keywords" content="pet, dog, cat, petshop, kucing, anjing">
+        <meta name="author" content="ArielVW">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="icon" href="assets/img/favicon.ico">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kelly+Slab&family=Sigmar&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <section id="Home">
+                <a href="#" id="brand">
+                    <div id="box-img"><img src="assets/img/Logo.png" alt="Logo Company"></div>
+                    <div id="box-text"><h1><span>Ceria</span> PetShop</h1></div>
+                </a>
+                <nav id="navbar">
+                    <div id="box-navbar">
+                        <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+                        <a href="#Home">Home</a>
+                        <a href="#Services">Services</a>
+                        <a href="#Products">Products</a>
+                        <a href="#Employees">Employees</a>
+                        <a href="#Contact">Contact</a>
+                    </div>
+                    <i class="fa-sharp fa-solid fa-bars" onclick="openNav()"></i>
+                </nav>
+            </section>
+        </header>
+
+        <section id="Banner">
+            <div id="banner-image">
+                <img src="assets/img/dog.png" alt="">
+            </div>
+            <div id="banner-text">
+                <h2><span id="bt-01">Everything</span> for Your <span id="bt-02">PET</span></h2>
+                <br>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </section>
+
+        <div id="Greetings">
+            <img id="greet-01" class="greeting" src="assets/img/greeting-cat.jpg" alt="Cat Image">
+            <img id="greet-02" class="greeting" src="assets/img/greeting-dog.png" alt="Dog Image">
+        </div>
+        
+        <section id="Services">
+            <h1>Our <span>Services</span></h1>
+            <div class="row">
+                <div id="box-services-01" class="box-services">
+                    <h3 id="title-services-01">Grooming</h3>
+                    <p id="teks-services-01">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <img id="img-services-01" class="img-services" src="assets/img/wall-01.png" alt="">
+                </div>
+                <div id="box-services-02" class="box-services">
+                    <h3 id="title-services-02">Clinic</h3>
+                    <p id="teks-services-02">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <img id="img-services-02" class="img-services" src="assets/img/wall-02.png" alt="">
+                </div>
+                <div id="box-services-03" class="box-services">
+                    <h3 id="title-services-03">Hotel</h3>
+                    <p id="teks-services-03">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <img id="img-services-03" class="img-services" src="assets/img/wall-03.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="Products">
+            <h1>Our <span>Products</span></h1>
+            <div class="row">
+                <div class="card">
+                    <div class="img-card">
+                        <img src="assets/img/img-01.png" alt="Card Image">
+                    </div>
+                    <div class="teks-card">
+                        <h2 class="title-card"><b>Pedigree 1-7years 20kg</b></h2>
+                        <p class="desc-card">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                        <h2 class="price-card">Price: Rp. 325.000,-</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-card">
+                        <img src="assets/img/img-02.jpg" alt="Card Image">
+                    </div>
+                    <div class="teks-card">
+                        <h2 class="title-card"><b>Drools Puppy Nutrion 3Kg</b></h2>
+                        <p class="desc-card">Vestibulum viverra, quam eget porta efficitur, lectus risus sollicitudin libero, ut ultrices erat ligula molestie nisi. Donec enim nibh, fringilla eget consectetur vel, aliquet vel odio. Vestibulum mollis sed magna id accumsan. Donec euismod vitae quam in lacinia. Vivamus molestie varius gravida. Ut ultricies lobortis massa non rutrum. Etiam nec arcu lorem. Maecenas elementum turpis eget lacinia finibus. Quisque bibendum est ligula, sed cursus nulla viverra vitae. Maecenas felis nisl, varius in suscipit id, semper at turpis. Vivamus mollis orci a dolor sollicitudin luctus. Phasellus egestas pulvinar placerat. Etiam gravida enim non molestie pharetra. Phasellus eu cursus ipsum.</p>
+                        <h2 class="price-card">Price: Rp. 255.000,-</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-card">
+                        <img src="assets/img/img-03.jpg" alt="Card Image">
+                    </div>
+                    <div class="teks-card">
+                        <h2 class="title-card"><b>Bolt Cat Food 8Kg</b></h2>
+                        <p class="desc-card">Curabitur ultrices lorem tellus, ut ullamcorper nulla dictum et. Curabitur ante ex, semper a pretium eget, pellentesque non odio. In mattis lorem vel lorem bibendum, scelerisque vestibulum dolor tincidunt. Praesent laoreet, massa sit amet porttitor accumsan, erat lorem rutrum metus, a euismod tellus lorem in ipsum. Curabitur ultrices tortor et vestibulum semper. Nulla facilisi. Nam rhoncus odio ac tellus feugiat, a molestie tellus vestibulum. Morbi vel libero in lectus rutrum facilisis.</p>
+                        <h2 class="price-card">Price: Rp. 275.000,-</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-card">
+                        <img src="assets/img/img-04.jpg" alt="Card Image">
+                    </div>
+                    <div class="teks-card">
+                        <h2 class="title-card"><b>Kucing Oreng Berbulu</b></h2>
+                        <p class="desc-card">Nulla at elit mauris. Suspendisse eu mi vitae nunc tempor vulputate. In justo enim, consectetur eget nunc ac, cursus laoreet tellus. Morbi a elit felis. Praesent orci arcu, porta ac laoreet sed, dignissim eu purus. Vivamus luctus neque nisi, sit amet faucibus diam sagittis nec. Nullam vel laoreet turpis. In in gravida quam.</p>
+                        <h2 class="price-card">Price: Rp. 1.255.000,-</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-card">
+                        <img src="assets/img/img-05.jpg" alt="Card Image">
+                    </div>
+                    <div class="teks-card">
+                        <h2 class="title-card"><b>Kucing Jutek Abu</b></h2>
+                        <p class="desc-card">Proin sagittis justo sed condimentum auctor. Nam commodo, sem a feugiat convallis, velit nunc pellentesque risus, at dictum sem nunc a erat. Vivamus libero magna, congue in hendrerit in, laoreet vitae quam. Donec porttitor non mauris rutrum euismod. Vestibulum non sem et felis fermentum dapibus in vitae urna. Quisque bibendum rhoncus eros sit amet malesuada. Nulla fringilla consequat neque sed gravida. Quisque dictum sapien elementum, fermentum sapien ut, pellentesque ante. Phasellus sodales augue sit amet purus cursus euismod.</p>
+                        <h2 class="price-card">Price: Rp. 3.255.000,-</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-card">
+                        <img src="assets/img/img-06.jpg" alt="Card Image">
+                    </div>
+                    <div class="teks-card">
+                        <h2 class="title-card"><b>Rainbow Cat</b></h2>
+                        <p class="desc-card">Nam eget massa risus. Quisque quam neque, molestie vitae lorem non, porta semper erat. Etiam congue risus a finibus ullamcorper. Curabitur non dapibus velit. Nulla facilisi. Nunc turpis eros, imperdiet vel dui id, vestibulum pellentesque mauris. Ut non arcu et est mattis volutpat. Donec interdum ex mauris, a tincidunt urna volutpat sed.</p>
+                        <h2 class="price-card">Price: Rp. 2.455.000,-</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Employees">
+            <h1>Our <span>Employees</span></h1>
+            <div class="bg-employees">
+                <div class="employees">
+                    <img src="assets/img/Person01.jpg" alt="">
+                    <img src="assets/img/Person02.jpg" alt="">
+                    <img src="assets/img/Person03.jpg" alt="">
+                </div>
+                <p id="teks-employees">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
+            </div>
+        </section>
+        
+        <section id="Contact" class="contact">
+            <div id="box-contact">
+                <img src="assets/img/teks-address.jpg" alt="">
+                <div class="contact-teks">
+                    <h1>Get In <span>Touch</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="row">
+                        <i class="fa-solid fa-house"></i>&nbsp;<span id="address">43259 Nader Curve Missisipi Michigan</span>
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-phone"></i>&nbsp;<span id="phone">435-223-8754</span>
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-square-envelope"></i>&nbsp;<span id="email">contact@domain.com</span>
+                    </div>
+                </div>
+            </div>
+            <div id="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26617.047138746184!2d-89.65386126394979!3d33.49797149188929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x862832e4e44ad419%3A0x620d177fe9dca6da!2sMississippi%2C%20Amerika%20Serikat!5e0!3m2!1sid!2sid!4v1683828053370!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <footer>
+            <div id="box-social-media">
+                <a href="YOUR_FACEBOOK_PROFILE" class="social-media"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;
+                <a href="YOUR_INSTAGRAM_PROFILE" class="social-media"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;
+                <a href="YOUR_TWITTER_PROFILE" class="social-media"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div id="top">
+                <a href="#Home"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+            </div>
+            <div id="copyright">
+                <p>ArielVW © 2023</p>
+            </div>
+        </footer>
+        
+        <script>
+            let navbar = document.getElementById('box-navbar');
+            function openNav() { navbar.style.right = "0" }
+            function closeNav() { navbar.style.right = "-100px"}
+        </script>
+        <script src="https://kit.fontawesome.com/426638ad87.js" crossorigin="anonymous"></script>
+    </body>
+</html>
